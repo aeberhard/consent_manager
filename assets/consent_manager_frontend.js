@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 deleteCookies();
                 saveConsent('all');
             }
+            $('body').css('overflow', 'auto');
             document.getElementById('consent_manager-background').classList.add('consent_manager-hidden');
         });
     });
@@ -185,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.checked = true;
             }
         });
+        $('body').css('overflow', 'hidden');
         document.getElementById('consent_manager-background').classList.remove('consent_manager-hidden');
     }
 
